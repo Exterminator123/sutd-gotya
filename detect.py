@@ -1,8 +1,11 @@
 ## PyTorch implementation of YOLOv3
 ## from https://github.com/eriklindernoren/PyTorch-YOLOv3
 
+## After detecting images, the cropped images will be uploaded to Firebase Storage.
+
 ## Usage:
 ## $ python3 detect.py --image_path <folder containing sample images>
+
 
 from __future__ import division
 
@@ -27,6 +30,8 @@ from matplotlib.ticker import NullLocator
 
 import PIL.Image
 import PIL.ImageDraw
+
+import firebase
 
 
 parser = argparse.ArgumentParser()
@@ -92,9 +97,13 @@ for batch_i, (img_paths, input_imgs) in enumerate(dataloader):
 cmap = plt.get_cmap('tab20b')
 colors = [cmap(i) for i in np.linspace(0, 1, 20)]
 
+CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
+
 print ('\nSaving images:')
 # Iterate through images and save plot of detections
 for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
+
+    os.makedirs("output/%d" % img_i)
 
     print ("(%d) Image: '%s'" % (img_i, path))
 
@@ -114,6 +123,8 @@ for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
 
     # image to crop later
     img_to_crop = PIL.Image.open(path)
+
+    boxes = []
 
     # Draw bounding boxes and labels of detections
     if detections is not None:
@@ -142,18 +153,21 @@ for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
                     bbox={'color': color, 'pad': 0})
 
             # crop and save the image
-            print(x1, y1, box_w + x1, box_h + y1)
-            print([x1.item(), y1.item(), x1.item() + box_w.item(), y1.item() + box_h.item()])
+
+            boxes.append({ "classification": classes[int(cls_pred)], 
+                        "x1": x1.item(), "y1": y1.item(), 
+                        "x2": x1.item() + box_w.item(), "y2": y1.item() + box_h.item() })
 
             crop_img = img_to_crop.crop((x1.item(), y1.item(), x1.item() + box_w.item(), y1.item() + box_h.item()))
             #text_img = PIL.ImageDraw.Draw(crop_img)
             #text_img.text((0, 0), classes[int(cls_pred)])
-            crop_img.save('output/%d_%d_%s.png' % (img_i, detection_i, classes[int(cls_pred)]), 'PNG')
+            crop_img.save('output/%d/%d.png' % (img_i, detection_i), 'PNG')
             
     graph_img.set_clip_path(None)
     # Save generated image with detections
     plt.axis('off')
     plt.gca().xaxis.set_major_locator(NullLocator())
     plt.gca().yaxis.set_major_locator(NullLocator())
-    plt.savefig('output/%d.png' % (img_i), bbox_inches='tight', pad_inches=0.0)
+    plt.savefig('output/%d/original.png' % (img_i), bbox_inches='tight', pad_inches=0.0)
     plt.close()
+    firebase.upload_batch(os.path.join(CURRENT_DIR, 'output/{}'.format(img_i)), boxes)
