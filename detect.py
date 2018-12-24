@@ -39,12 +39,13 @@ parser.add_argument('--image_folder', type=str, default='data/samples', help='pa
 parser.add_argument('--config_path', type=str, default='data/yolov3.cfg', help='path to model config file')
 parser.add_argument('--weights_path', type=str, default='data/yolov3.weights', help='path to weights file')
 parser.add_argument('--class_path', type=str, default='data/coco.names', help='path to class label file')
-parser.add_argument('--conf_thres', type=float, default=0.8, help='object confidence threshold')
-parser.add_argument('--nms_thres', type=float, default=0.4, help='iou thresshold for non-maximum suppression')
+parser.add_argument('--conf_thres', type=float, default=0.2, help='object confidence threshold')
+parser.add_argument('--nms_thres', type=float, default=0.6, help='iou thresshold for non-maximum suppression')
 parser.add_argument('--batch_size', type=int, default=1, help='size of the batches')
 parser.add_argument('--n_cpu', type=int, default=8, help='number of cpu threads to use during batch generation')
 parser.add_argument('--img_size', type=int, default=416, help='size of each image dimension')
 parser.add_argument('--use_cuda', type=bool, default=True, help='whether to use cuda if available')
+parser.add_argument('--output_folder', type=str, default='output', help='output directory')
 opt = parser.parse_args()
 print(opt)
 
@@ -80,7 +81,7 @@ for batch_i, (img_paths, input_imgs) in enumerate(dataloader):
     # Get detections
     with torch.no_grad():
         detections = model(input_imgs)
-        detections = non_max_suppression(detections, 80, opt.conf_thres, opt.nms_thres)
+        detections = non_max_suppression(detections, 89, opt.conf_thres, opt.nms_thres)
 
 
     # Log progress
@@ -100,10 +101,16 @@ colors = [cmap(i) for i in np.linspace(0, 1, 20)]
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
 
 print ('\nSaving images:')
+
+os.makedirs(opt.output_folder)
+
+log_file = open(os.path.join(opt.output_folder, 'log.csv'), 'w')
+log_file.write("Filename,Label,x1,y1,x2,y2,Conf\n")
+
 # Iterate through images and save plot of detections
 for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
 
-    os.makedirs("output/%d" % img_i)
+    os.makedirs(os.path.join(opt.output_folder, "%d" % img_i))
 
     print ("(%d) Image: '%s'" % (img_i, path))
 
@@ -125,6 +132,8 @@ for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
     img_to_crop = PIL.Image.open(path)
 
     boxes = []
+
+    print(detections)
 
     # Draw bounding boxes and labels of detections
     if detections is not None:
@@ -158,16 +167,23 @@ for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
                         "x1": x1.item(), "y1": y1.item(), 
                         "x2": x1.item() + box_w.item(), "y2": y1.item() + box_h.item() })
 
+            log_file.write(",".join([path.split("/")[-1], classes[int(cls_pred)], str(x1.item()), str(y1.item()), str(x1.item() + box_w.item()), str(y1.item() + box_h.item()), str(cls_conf.item())]) + "\n")
+
             crop_img = img_to_crop.crop((x1.item(), y1.item(), x1.item() + box_w.item(), y1.item() + box_h.item()))
             #text_img = PIL.ImageDraw.Draw(crop_img)
             #text_img.text((0, 0), classes[int(cls_pred)])
-            crop_img.save('output/%d/%d.png' % (img_i, detection_i), 'PNG')
+            crop_img.save(os.path.join(opt.output_folder, '%d/%d.png' % (img_i, detection_i)), 'PNG')
+            crop_img.close()
             
+
     graph_img.set_clip_path(None)
     # Save generated image with detections
     plt.axis('off')
     plt.gca().xaxis.set_major_locator(NullLocator())
     plt.gca().yaxis.set_major_locator(NullLocator())
-    plt.savefig('output/%d/original.png' % (img_i), bbox_inches='tight', pad_inches=0.0)
-    plt.close()
-    firebase.upload_batch(os.path.join(CURRENT_DIR, 'output/{}'.format(img_i)), boxes)
+    plt.savefig(os.path.join(opt.output_folder, '%d/original.png' % (img_i)), bbox_inches='tight', pad_inches=0.0)
+    plt.clf()
+    plt.close("all")
+    #firebase.upload_batch(os.path.join(CURRENT_DIR, 'output/{}'.format(img_i)), boxes)
+
+log_file.close()

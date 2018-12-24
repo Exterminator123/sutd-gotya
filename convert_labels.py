@@ -6,6 +6,19 @@ Generates YOLOv3-style label files from OID-style label files.
 Run this in a Label directory (i.e. OID/Dataset/test/*/Label)
 """
 
+CLASSLIST = {
+    "Bicycle": 2,
+    "Hoverboard": 80,
+    "Scooter": 81,
+    "Wheelchair": 82,
+    "Mobility Scooter": 83,
+    "Baby Stroller": 84,
+    "Skateboard": 85,
+    "Segway": 86,
+    "Power-Assisted Bicycle": 87,
+    "Unicycle": 88
+}
+
 def convert(line, width, height):
     """
     Convert one line of coordinates from OID-style (absolute coordinates) to YOLOv3-style (relative floats around bounding boxes).    
@@ -32,7 +45,7 @@ def convert(line, width, height):
     #print("y: {} to {} out of {}".format(y1, y2, height)) 
     #print("\t y_center = {}".format(y_center))
     #print("\t box_height = {}".format(box_height))
-    return "{} {} {} {} {}\n".format(class_name,
+    return "{} {} {} {} {}\n".format(CLASSLIST[class_name],
                                     x_center * dw,
                                     y_center * dh,
                                     box_width * dw,
