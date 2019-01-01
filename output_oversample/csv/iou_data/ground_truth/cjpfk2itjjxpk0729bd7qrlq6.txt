@@ -1,0 +1,17 @@
+Bicycle,296,82,504,292
+Hoverboard,383,316,499,351
+Hoverboard,437,323,551,371
+Hoverboard,487,328,604,380
+Hoverboard,539,334,640,387
+Hoverboard,613,355,640,403
+Hoverboard,571,256,640,300
+Hoverboard,625,261,640,303
+Hoverboard,326,406,448,473
+Hoverboard,329,392,441,436
+Hoverboard,438,394,625,480
+Segway,219,214,335,341
+Segway,33,260,120,380
+Segway,108,269,175,394
+Segway,94,91,226,261
+Unicycle,174,323,257,414
+Unicycle,250,334,333,428

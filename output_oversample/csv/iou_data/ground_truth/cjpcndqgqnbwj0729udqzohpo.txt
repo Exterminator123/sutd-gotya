@@ -1,0 +1,2 @@
+Wheelchair,2706,1525,4558,3873
+Mobility Scooter,1921,1130,3317,3653

@@ -1,0 +1,8 @@
+Wheelchair,292,372,959,979
+Baby Stroller,537,217,647,397
+Baby Stroller,723,236,769,293
+Baby Stroller,642,171,673,223
+Baby Stroller,608,179,644,232
+Baby Stroller,521,220,547,280
+Baby Stroller,0,270,73,444
+Baby Stroller,547,194,578,236

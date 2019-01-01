@@ -105,7 +105,7 @@ print ('\nSaving images:')
 os.makedirs(opt.output_folder)
 
 log_file = open(os.path.join(opt.output_folder, 'log.csv'), 'w')
-log_file.write("Filename,Label,x1,y1,x2,y2,Conf\n")
+log_file.write("Filename,Label,x1,y1,x2,y2,Object Conf,Class Conf\n")
 
 # Iterate through images and save plot of detections
 for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
@@ -167,7 +167,7 @@ for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
                         "x1": x1.item(), "y1": y1.item(), 
                         "x2": x1.item() + box_w.item(), "y2": y1.item() + box_h.item() })
 
-            log_file.write(",".join([path.split("/")[-1], classes[int(cls_pred)], str(x1.item()), str(y1.item()), str(x1.item() + box_w.item()), str(y1.item() + box_h.item()), str(cls_conf.item())]) + "\n")
+            log_file.write(",".join([path.split("/")[-1], classes[int(cls_pred)], str(x1.item()), str(y1.item()), str(x1.item() + box_w.item()), str(y1.item() + box_h.item()), str(conf.item()), str(cls_conf.item())]) + "\n")
 
             crop_img = img_to_crop.crop((x1.item(), y1.item(), x1.item() + box_w.item(), y1.item() + box_h.item()))
             #text_img = PIL.ImageDraw.Draw(crop_img)

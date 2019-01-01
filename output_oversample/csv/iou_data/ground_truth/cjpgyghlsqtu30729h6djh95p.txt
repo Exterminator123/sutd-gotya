@@ -1,0 +1,9 @@
+Wheelchair,2427,822,3389,2791
+Wheelchair,1928,727,2157,993
+Wheelchair,1766,511,1934,913
+Wheelchair,1382,651,1430,856
+Wheelchair,4165,416,4423,883
+Wheelchair,3182,466,3582,917
+Wheelchair,3661,744,3941,942
+Baby Stroller,4019,435,4177,854
+Baby Stroller,3930,681,4022,824

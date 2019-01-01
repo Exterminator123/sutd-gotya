@@ -1,0 +1,10 @@
+Wheelchair,187,548,328,659
+Wheelchair,277,506,386,603
+Wheelchair,99,199,174,251
+Wheelchair,294,160,382,238
+Wheelchair,419,159,487,213
+Wheelchair,443,192,524,247
+Wheelchair,476,110,544,156
+Wheelchair,561,146,596,203
+Wheelchair,476,41,531,89
+Skateboard,487,391,533,416
