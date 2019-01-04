@@ -1,0 +1,4 @@
+Scooter,716,529,729,562
+Skateboard,367,461,527,531
+Skateboard,958,593,1024,667
+Skateboard,11,604,40,624

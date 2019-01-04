@@ -1,0 +1,6 @@
+Bicycle,179,108,205,148
+Bicycle,166,118,193,151
+Wheelchair,24,202,260,401
+Wheelchair,336,201,522,375
+Wheelchair,498,183,590,290
+Wheelchair,313,172,386,234

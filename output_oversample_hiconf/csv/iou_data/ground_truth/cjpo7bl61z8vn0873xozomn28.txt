@@ -1,0 +1,7 @@
+Bicycle,259,224,732,557
+Bicycle,199,148,670,472
+Bicycle,173,169,581,415
+Bicycle,664,121,926,291
+Bicycle,761,171,999,365
+Bicycle,878,176,1024,376
+Mobility Scooter,89,220,962,768

@@ -1,0 +1,5 @@
+Wheelchair,128,81,172,141
+Mobility Scooter,226,66,257,103
+Mobility Scooter,3,58,223,235
+Mobility Scooter,48,63,208,178
+Mobility Scooter,75,72,195,156

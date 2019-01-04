@@ -1,0 +1,4 @@
+Bicycle,883,377,960,448
+Bicycle,0,251,40,292
+Skateboard,361,0,518,465
+Skateboard,193,382,284,409

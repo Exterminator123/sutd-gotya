@@ -1,0 +1,404 @@
+image 0: cjp809r377z4008093lbjeupi.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Correctly identified mobility scooter, iou: 0.8822005485605412
+image 1: cjp81iqn7rrjt09809fg7f60r.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified bicycle, iou: 0.7066449123464523
+		Missed a bicycle
+		Missed a bicycle
+		Missed a bicycle
+		Missed a bicycle
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a skateboard
+image 2: cjpb7a85td1nd08966hvp4bz9.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified bicycle, iou: 0.6837289949287979
+		Missed a bicycle
+		Missed a scooter
+		Correctly identified scooter, iou: 0.7678449124734615
+		Missed a scooter
+		Missed a skateboard
+image 3: cjpb7moqod4ut0896hi544vur.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+image 4: cjpb9qw5x9ixy09982j6fyvi9.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a mobility scooter
+image 5: cjpbaa6y99p9i0998w00n29ac.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified wheelchair, iou: 0.6319343081210663
+		Missed a baby stroller
+image 6: cjpbbjxd89y3v0998kuceaxk1.jpg
+	pmd_yolov3_39000.csv
+		Missed a wheelchair
+		Missed a wheelchair
+		Correctly identified wheelchair, iou: 0.0006745841316379573
+		Misidentified mobility scooter as wheelchair, iou: 0.661434051237677
+image 7: cjpbc6y8qenor0896kcj1c51q.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Missed a skateboard
+image 8: cjpcgseizfp1p0785vzdhduu7.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Missed a skateboard
+		Missed a skateboard
+image 9: cjpcklmxaj4oo0785ghw4zylt.jpg
+	pmd_yolov3_39000.csv
+		Misidentified wheelchair as mobility scooter, iou: 0.01169851942247103
+		Correctly identified mobility scooter, iou: 0.8453598684444388
+image 10: cjpcl5y73mf990729t93yvyv0.jpg
+	pmd_yolov3_39000.csv
+		Missed a wheelchair
+		Missed a mobility scooter
+image 11: cjpclu3y3mnf70729csfh8jd4.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Missed a skateboard
+		Missed a skateboard
+image 12: cjpcmhx3cmxqe0729nc0hk2li.jpg
+	pmd_yolov3_39000.csv
+		Misidentified wheelchair as mobility scooter, iou: 0.07542413150505566
+		Correctly identified mobility scooter, iou: 0.867663645932882
+		Correctly identified mobility scooter, iou: 0.8649858104855269
+		Correctly identified mobility scooter, iou: 0.5256833407928121
+		Correctly identified mobility scooter, iou: 0.28798304756475795
+image 13: cjpcn2o3kk18w0785b9fb15ed.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified wheelchair, iou: 0.7768855377442536
+		Misidentified baby stroller as wheelchair, iou: 0.015196195599876157
+		Missed a baby stroller
+		Missed a baby stroller
+		Missed a baby stroller
+		Missed a baby stroller
+		Missed a baby stroller
+		Missed a baby stroller
+image 14: cjpcndqgqnbwj0729udqzohpo.jpg
+	pmd_yolov3_39000.csv
+		Misidentified wheelchair as mobility scooter, iou: 0.7493552396682729
+		Correctly identified mobility scooter, iou: 0.29697656116035187
+image 15: cjpcnmj9cnfyx0729wgntwdye.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified wheelchair, iou: 0.792668003112492
+		Correctly identified wheelchair, iou: 0.6820357509309034
+		Correctly identified wheelchair, iou: 0.05165998741831205
+		Correctly identified wheelchair, iou: 0.3386821826648366
+		Missed a baby stroller
+image 16: cjpcnrscbni7k072947zft179.jpg
+	pmd_yolov3_39000.csv
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a skateboard
+image 17: cjpco9sickexr0785016kka2e.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified bicycle, iou: 0.7097896961881943
+		Missed a bicycle
+		Missed a skateboard
+image 18: cjpcoqv6snxxt0729wu82nec4.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Missed a wheelchair
+image 19: cjpe7hczxnvqm0729579sq55m.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Missed a scooter
+		Missed a scooter
+image 20: cjpe8nig1ha5d0785cjfw193y.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified wheelchair, iou: 0.16748889697043012
+		Missed a wheelchair
+		Missed a wheelchair
+		Missed a wheelchair
+		Missed a wheelchair
+		Missed a wheelchair
+		Missed a wheelchair
+		Correctly identified wheelchair, iou: 0.02693482274448326
+		Correctly identified wheelchair, iou: 0.007023964392731742
+		Correctly identified wheelchair, iou: 0.0020002007448459494
+		Correctly identified wheelchair, iou: 0.8453558406500614
+		Correctly identified wheelchair, iou: 0.8418179962724022
+		Correctly identified wheelchair, iou: 0.721292377322989
+		Missed a wheelchair
+		Missed a mobility scooter
+image 21: cjpe8zkzzhea80785f27reh7m.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Missed a bicycle
+		Missed a bicycle
+		Missed a bicycle
+		Missed a scooter
+image 22: cjpfimgxsjl6c0729fsbpvfx6.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Missed a skateboard
+image 23: cjpfk2itjjxpk0729bd7qrlq6.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a segway
+		Missed a segway
+		Missed a segway
+		Missed a segway
+		Missed a unicycle
+		Missed a unicycle
+image 24: cjpfkgp0jipei0840xhp4flwb.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified wheelchair, iou: 0.029005578813279292
+		Correctly identified wheelchair, iou: 0.7647179582680754
+		Correctly identified wheelchair, iou: 0.8298066373686028
+		Correctly identified wheelchair, iou: 0.06433922098174581
+		Missed a mobility scooter
+image 25: cjpfkxo1hkai00729mzlvpnoi.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified mobility scooter, iou: 0.7100083059609349
+		Missed a baby stroller
+image 26: cjpfkzpyakba30729dkjrxsww.jpg
+	pmd_yolov3_39000.csv
+		Misidentified hoverboard as wheelchair, iou: 0.0015129142297684718
+		Correctly identified wheelchair, iou: 0.681307886485286
+image 27: cjpflgoy9kgen07290dxe1pdu.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Missed a wheelchair
+		Misidentified wheelchair as bicycle, iou: 0.8269173201380893
+		Misidentified wheelchair as bicycle, iou: 0.05009563651447653
+		Misidentified wheelchair as bicycle, iou: 0.07705728312208232
+image 28: cjpflhagakgof0729yc4b0k43.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a skateboard
+		Missed a skateboard
+		Missed a skateboard
+		Missed a skateboard
+		Missed a skateboard
+		Missed a skateboard
+		Missed a skateboard
+		Missed a skateboard
+		Missed a skateboard
+image 29: cjpfmeu9akni2072946009zyq.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a mobility scooter
+image 30: cjpfmmz5mko9d0729fm39pegw.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Missed a wheelchair
+		Missed a baby stroller
+		Missed a skateboard
+image 31: cjpgpmzgknq17084020a9uoy7.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Missed a bicycle
+		Missed a scooter
+		Missed a baby stroller
+image 32: cjpgt43jxofen08401j0j345z.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified scooter, iou: 0.8082698171046796
+		Missed a skateboard
+image 33: cjpgtem8fq6db0729pvqrhsnj.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified wheelchair, iou: 0.6829418306305887
+		Missed a wheelchair
+		Correctly identified wheelchair, iou: 0.796144542106703
+		Correctly identified wheelchair, iou: 0.01533743658870871
+		Correctly identified wheelchair, iou: 0.0012170703996344512
+		Correctly identified wheelchair, iou: 0.300203310927493
+		Correctly identified wheelchair, iou: 0.016777263578462577
+		Misidentified segway as wheelchair, iou: 0.023520912128900687
+image 34: cjpgtjhv9q6p30729ohzsipeq.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a skateboard
+image 35: cjpgtpstsq7fl0729p250j195.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified wheelchair, iou: 0.37849467953409593
+		Correctly identified wheelchair, iou: 0.21944764642439085
+		Missed a wheelchair
+		Correctly identified wheelchair, iou: 0.8412945020852225
+		Missed a wheelchair
+		Missed a wheelchair
+		Correctly identified wheelchair, iou: 0.6813414371599759
+		Correctly identified wheelchair, iou: 0.7552878122732914
+		Correctly identified wheelchair, iou: 0.24218529521193208
+		Missed a skateboard
+image 36: cjpgtywf0ojwt0840hjm6ebu1.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified wheelchair, iou: 0.9018199606955235
+		Missed a mobility scooter
+image 37: cjpgyghlsqtu30729h6djh95p.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified wheelchair, iou: 0.8532118372197667
+		Missed a wheelchair
+		Missed a wheelchair
+		Missed a wheelchair
+		Missed a wheelchair
+		Correctly identified wheelchair, iou: 0.00427784327911698
+		Missed a wheelchair
+		Missed a baby stroller
+		Missed a baby stroller
+image 38: cjpgzdjiyqzmk0729kdtaorzv.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a hoverboard
+		Missed a segway
+		Missed a segway
+		Missed a segway
+		Missed a segway
+		Missed a unicycle
+		Missed a unicycle
+image 39: cjpgzpijap8k70840h2wjhyuv.jpg
+	pmd_yolov3_39000.csv
+		Correctly identified scooter, iou: 0.7154704603577855
+		Misidentified skateboard as scooter, iou: 0.06500664020971142
+		Missed a skateboard
+		Missed a skateboard
+image 40: cjpgzs7pwr2zp0729krtwiz3o.jpg
+	pmd_yolov3_39000.csv
+		Misidentified bicycle as mobility scooter, iou: 0.4644022331705799
+		Correctly identified mobility scooter, iou: 0.46664181761242224
+		Correctly identified mobility scooter, iou: 0.915990077778758
+image 41: cjpgzu9tyr3bi0729z9hmnjro.jpg
+	pmd_yolov3_39000.csv
+		Missed a scooter
+		Missed a skateboard
+		Missed a skateboard
+		Missed a skateboard
+image 42: cjpjhd5bn17nu0602l2thm0nv.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a skateboard
+		Missed a skateboard
+		Missed a skateboard
+		Missed a skateboard
+		Missed a skateboard
+		Missed a skateboard
+		Missed a skateboard
+image 43: cjpjj792w2m3r0602nry0ozfm.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a scooter
+image 44: cjpjjja7j2w6p0602trji8p46.jpg
+	pmd_yolov3_39000.csv
+		Misidentified wheelchair as mobility scooter, iou: 0.1655501582192856
+		Misidentified wheelchair as mobility scooter, iou: 0.008466572683124536
+		Correctly identified mobility scooter, iou: 0.8365534066978699
+image 45: cjpl6w3nv72cd0755w3qjlu6y.jpg
+	pmd_yolov3_39000.csv
+		Misidentified wheelchair as mobility scooter, iou: 0.09753421533462084
+		Misidentified wheelchair as mobility scooter, iou: 0.06248996685768381
+		Missed a wheelchair
+		Misidentified wheelchair as mobility scooter, iou: 0.004004441516319689
+		Misidentified wheelchair as mobility scooter, iou: 0.008563694204262343
+		Misidentified wheelchair as mobility scooter, iou: 0.003311634360490577
+		Misidentified wheelchair as mobility scooter, iou: 0.0014174782087444605
+		Misidentified wheelchair as mobility scooter, iou: 0.002106289924785555
+		Misidentified wheelchair as mobility scooter, iou: 0.0008788661316075489
+		Correctly identified mobility scooter, iou: 0.7277185554353465
+		Correctly identified mobility scooter, iou: 0.7290101622864187
+		Correctly identified mobility scooter, iou: 0.2891641899681308
+image 46: cjpnn1j88ia3d0795351pwbj8.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Correctly identified scooter, iou: 0.6916385763651588
+		Missed a scooter
+		Missed a scooter
+image 47: cjpnxkditm4gw07950qtv2ruv.jpg
+	pmd_yolov3_39000.csv
+		Missed a wheelchair
+		Correctly identified mobility scooter, iou: 0.9400198760825714
+		Correctly identified mobility scooter, iou: 0.0004360016008281322
+image 48: cjpo1622wxx3c0873me3rzvqm.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a scooter
+		Misidentified scooter as wheelchair, iou: 0.25053783624404724
+		Misidentified scooter as wheelchair, iou: 0.4312640974239569
+		Misidentified scooter as wheelchair, iou: 0.055161103437123736
+		Misidentified scooter as wheelchair, iou: 0.05412032790057423
+		Misidentified scooter as wheelchair, iou: 0.038470253628385624
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+		Missed a scooter
+image 49: cjpo58djcysqv0873h7nms2r6.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Misidentified scooter as mobility scooter, iou: 0.4568653775036207
+		Misidentified scooter as mobility scooter, iou: 0.16083199737693532
+		Misidentified scooter as mobility scooter, iou: 0.15726405799092896
+		Misidentified scooter as mobility scooter, iou: 0.05512058054772955
+		Misidentified scooter as mobility scooter, iou: 0.11133036440227793
+		Misidentified scooter as mobility scooter, iou: 0.10323379256013067
+		Misidentified scooter as mobility scooter, iou: 0.08362405640031291
+		Misidentified scooter as mobility scooter, iou: 0.08450481973701486
+		Misidentified scooter as mobility scooter, iou: 0.0820802909347179
+		Misidentified scooter as mobility scooter, iou: 0.05544433637167772
+image 50: cjpo7bl61z8vn0873xozomn28.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Missed a bicycle
+		Missed a bicycle
+		Missed a bicycle
+		Missed a bicycle
+		Missed a mobility scooter
+image 51: cjpo7z9h1zfv10873hbuup5nk.jpg
+	pmd_yolov3_39000.csv
+		Missed a bicycle
+		Missed a bicycle
+		Missed a skateboard
+image 52: log.jpg
+	pmd_yolov3_39000.csv
