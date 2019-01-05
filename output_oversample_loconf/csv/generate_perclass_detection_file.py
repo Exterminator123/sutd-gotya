@@ -73,7 +73,8 @@ for detection_filename in sorted(glob("*.csv")):
         with open(detection_filename, 'r') as detection_file:
             next(detection_file)
             for detection_line in detection_file:
-                image_filename, detection_label, *detection_box = detection_line.rstrip().split(",")
+                image_filename, detection_label, *detection_box, obj_conf, class_conf = detection_line.rstrip().split(",")
+                detection_box = [float(i) for i in detection_box]
                 if detection_label != output_classname:
                     continue
                 try:
@@ -94,6 +95,7 @@ for detection_filename in sorted(glob("*.csv")):
 
                 image_object["boxes"].append(detection_box)
                 image_object["scores"].append(max(viable_ious or [0]))
+                print(viable_ious)
                 
         print(f"{detection_filename}/{output_classname}.json")
         output_dir = re.sub("^pmd_yolov3_", "", detection_filename)
