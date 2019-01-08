@@ -1,0 +1,2 @@
+Mobility Scooter,0,192,152,400
+Mobility Scooter,231,177,400,400
